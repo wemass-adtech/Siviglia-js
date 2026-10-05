@@ -1,0 +1,27 @@
+{
+    "name": "Siviglia-js",
+    "version": "0.0.1",
+    "description": "Codigo JS del framework Siviglia.",
+    "private": "true",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Wemass AdTech",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "jquery": "3.7.1"
+    },
+    "engines": {
+        "pnpm": ">=12.9.1"
+    },
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.9.1",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.9.1"
+}

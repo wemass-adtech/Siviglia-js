@@ -1,26 +1,26 @@
 (function () {
-//callbackInit
+  //callbackInit
   def =
-//definitionInit
+    //definitionInit
     {
-      "FIELDS": {
-        "f4": {
-          "TYPE": "String"
+      FIELDS: {
+        f4: {
+          TYPE: "String",
         },
-        "f3": {
-          "TYPE": "Integer",
-          "SOURCE": {
-            "TYPE": "Url",
-            "URL": "/packages/Siviglia/tests/stubs/data/[%#../f4%].json",
-            "LABEL": "a",
-            "VALUE": "b"
-          }
-        }
-      }
-    }
-//definitionEnd
+        f3: {
+          TYPE: "Integer",
+          SOURCE: {
+            TYPE: "Url",
+            URL: "/tests/stubs/data/[%#../f4%].json",
+            LABEL: "a",
+            VALUE: "b",
+          },
+        },
+      },
+    };
+  //definitionEnd
 
-//codeInit
+  //codeInit
   var t1 = new Siviglia.model.BaseTypedObject(def);
 
   var p = $.Deferred();
@@ -40,15 +40,14 @@
   });
   s.fetch();
   status = status && nChanged === 1 && nValid === 0;
-  if (!status)
-    return status;
+  if (!status) return status;
   expectOk = 1;
   t1.f4 = "data1";
   p.then(function () {
-    t1.destruct()
-  })
+    t1.destruct();
+  });
   return p;
 
-//codeEnd
-//callbackEnd
-})
+  //codeEnd
+  //callbackEnd
+});

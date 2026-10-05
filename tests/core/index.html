@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Require test</title>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/Siviglia.js"></script>
+  </head>
+  <body style="background-color: #eee; background-image: none">
+    <script>
+      Siviglia.debug = true;
+
+      Siviglia.config = {
+        baseUrl: "http://reflection.adtopy.com/",
+        // staticsUrl: 'http://statics.adtopy.com/',
+        staticsUrl: "../../../../",
+        metadataUrl: "http://metadata.adtopy.com/",
+      };
+    </script>
+
+    <script>
+      var signingBook = [];
+
+      // Test básico del funcionamiento de require
+      /* var dependencyList = ["require/stubs/simpleDependency.js"]; */
+
+      // Test de carga de distintos tipos de recurso
+      /* var dependencyList = [
+        "require/stubs/mock.html",
+        "require/stubs/mock.js",
+        "require/stubs/mock.css",
+      ]; */
+
+      // Test de carga de widget por objeto
+      /* var dependencyList = [
+        {
+          template: "tests/core/require/stubs/widgetMock.html",
+          js: "tests/core/require/stubs/widgetMock.js",
+        },
+      ]; */
+
+      // Test de paths
+      /* var dependencyList = [
+        // para widgets funciona poner el path desde el raiz SIN BARRA '/'
+        "tests/core/require/stubs/widgetMock",
+        // para un recurso de otro tipo falla
+        "tests/core/require/stubs/mock.js",
+        // funciona si el mismo path comienza con '/'
+        "/tests/core/require/stubs/mock.html",
+        // para recursos no widget funciona poner un path relativo al directorio del archivo
+        // que genera el contexto principal
+        "require/stubs/mock.css",
+        // para widgets no funciona el path relativo al directorio del archivo
+        // que genera el contexto principal
+        "require/stubs/widgetMock",
+        // Cuando se carga por objeto funciona correctamente con y sin '/' al ppio
+        {
+          template: "/tests/core/require/stubs/widgetMock.html",
+          js: "/tests/core/require/stubs/widgetMock.js",
+        },
+        {
+          template: "tests/core/require/stubs/widgetMock.html",
+          js: "tests/core/require/stubs/widgetMock.js",
+        },
+      ]; */
+
+      // Test de verificación de relaciones entre dependencias
+      /* var dependencyList = [
+        "require/chainTest.js",
+        // 'multipleTest.js',
+        // 'mutualRequirementTest.js',
+        // 'chainedMultipleTest.js',
+      ]; */
+
+      Siviglia.require(dependencyList, false).then(function () {
+        $(document).ready(function () {
+          console.log("running main context");
+          signingBook.push("Main context");
+        });
+      });
+    </script>
+  </body>
+</html>
