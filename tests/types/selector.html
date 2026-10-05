@@ -1,290 +1,381 @@
-git <!DOCTYPE html>
+git <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Siviglia testing</title>
 
-    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../../../../packages/Siviglia/Siviglia.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/Siviglia.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <style>
-        .wemass-background {
-            background-color: #081E2C
-        }
+      .wemass-background {
+        background-color: #081e2c;
+      }
 
-        .wemass-card {
-            background-color: #91BF20 !important;
-            border-color: #ff9800 !important;
-        }
+      .wemass-card {
+        background-color: #91bf20 !important;
+        border-color: #ff9800 !important;
+      }
     </style>
-</head>
+  </head>
 
-<body class="wemass-background">
-<div class="container py-4 ">
-    <main>
+  <body class="wemass-background">
+    <div class="container py-4">
+      <main>
         <header class="pb-3 mb-4 border-bottom wemass-background">
-            <img src="https://wemass.com/img/logo-wemass.svg" class="m-3 logo" alt="WEMASS">
-            <span class="fs-4 text-white ">Siviglia testing</span>
+          <img
+            src="https://wemass.com/img/logo-wemass.svg"
+            class="m-3 logo"
+            alt="WEMASS"
+          />
+          <span class="fs-4 text-white">Siviglia testing</span>
         </header>
         <div class="p-5 mb-4 rounded-3 wemass-card">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Tests UI</h1>
-                <p class="col-md-8 fs-4">Tests de los diferentes elementos con los que el framework se construye el
-                    UI</p>
-                <button class="btn btn-primary" onclick="openTestSet('')">Todos los tests</button>
-            </div>
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Tests UI</h1>
+            <p class="col-md-8 fs-4">
+              Tests de los diferentes elementos con los que el framework se
+              construye el UI
+            </p>
+            <button class="btn btn-primary" onclick="openTestSet('')">
+              Todos los tests
+            </button>
+          </div>
         </div>
-        <div class=" mb-4 rounded-3 wemass-card">
-            <div id="test-container" class="container-fluid py-5"></div>
+        <div class="mb-4 rounded-3 wemass-card">
+          <div id="test-container" class="container-fluid py-5"></div>
         </div>
-
 
         <div class="row align-items-md-stretch">
-            <div class="row align-items-md-stretch">
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de baseTypedObject</h2>
-                        <div class="mb-3">
-                            <button id="baseTypedObject-set-btn" id="baseTypedObject-set-btn" class="btn btn-primary"
-                                    onclick="openTestSet('baseTypedObject')">Set completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="baseTypedObject-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
+          <div class="row align-items-md-stretch">
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de baseTypedObject</h2>
+                <div class="mb-3">
+                  <button
+                    id="baseTypedObject-set-btn"
+                    id="baseTypedObject-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('baseTypedObject')"
+                  >
+                    Set completo
+                  </button>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de baseTypedObjectModel</h2>
-                        <div class="mb-3">
-                            <button id="baseTypedObjectModel-set-btn" class="btn btn-primary" onclick="openTestSet('baseTypedObjectModel')">Set
-                                completo
-                            </button>
-                        </div>
 
-                        <div class="mb-3">
-                            <div id="baseTypedObjectModel-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
+                <div class="mb-3">
+                  <div
+                    id="baseTypedObject-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de string</h2>
-                        <div class="mb-3">
-                            <button id="string-set-btn" class="btn btn-primary" onclick="openTestSet('string')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="string-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de integer</h2>
-                        <div class="mb-3">
-                            <button id="integer-set-btn" class="btn btn-primary" onclick="openTestSet('integer')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="integer-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de enum</h2>
-                        <div class="mb-3">
-                            <button id="enum-set-btn" class="btn btn-primary" onclick="openTestSet('enum')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="enum-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de container</h2>
-                        <div class="mb-3">
-                            <button id="container-set-btn" class="btn btn-primary" onclick="openTestSet('container')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="container-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de array</h2>
-                        <div class="mb-3">
-                            <button id="array-set-btn" class="btn btn-primary" onclick="openTestSet('array')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="array-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de dictionary</h2>
-                        <div class="mb-3">
-                            <button id="dictionary-set-btn" class="btn btn-primary" onclick="openTestSet('dictionary')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="dictionary-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de dateTime</h2>
-                        <div class="mb-3">
-                            <button id="dateTime-set-btn" class="btn btn-primary" onclick="openTestSet('dateTime')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="dateTime-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de typeSwitcher</h2>
-                        <div class="mb-3">
-                            <button id="typeSwitcher-set-btn" class="btn btn-primary" onclick="openTestSet('typeSwitcher')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="typeSwitcher-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Tests de source</h2>
-                        <div class="mb-3">
-                            <button id="source-set-btn" class="btn btn-primary" onclick="openTestSet('source')">Set
-                                completo
-                            </button>
-                        </div>
-
-                        <div class="mb-3">
-                            <div id="source-container" class="btn-group-vertical" role="group"
-                                 aria-label="Vertical button group">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de baseTypedObjectModel</h2>
+                <div class="mb-3">
+                  <button
+                    id="baseTypedObjectModel-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('baseTypedObjectModel')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="baseTypedObjectModel-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de string</h2>
+                <div class="mb-3">
+                  <button
+                    id="string-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('string')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="string-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de integer</h2>
+                <div class="mb-3">
+                  <button
+                    id="integer-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('integer')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="integer-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de enum</h2>
+                <div class="mb-3">
+                  <button
+                    id="enum-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('enum')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="enum-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de container</h2>
+                <div class="mb-3">
+                  <button
+                    id="container-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('container')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="container-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de array</h2>
+                <div class="mb-3">
+                  <button
+                    id="array-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('array')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="array-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de dictionary</h2>
+                <div class="mb-3">
+                  <button
+                    id="dictionary-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('dictionary')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="dictionary-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de dateTime</h2>
+                <div class="mb-3">
+                  <button
+                    id="dateTime-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('dateTime')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="dateTime-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de typeSwitcher</h2>
+                <div class="mb-3">
+                  <button
+                    id="typeSwitcher-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('typeSwitcher')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="typeSwitcher-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Tests de source</h2>
+                <div class="mb-3">
+                  <button
+                    id="source-set-btn"
+                    class="btn btn-primary"
+                    onclick="openTestSet('source')"
+                  >
+                    Set completo
+                  </button>
+                </div>
+
+                <div class="mb-3">
+                  <div
+                    id="source-container"
+                    class="btn-group-vertical"
+                    role="group"
+                    aria-label="Vertical button group"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-</div>
+      </main>
+    </div>
 
-<script>
-  Siviglia.debug = true;
+    <script>
+      Siviglia.debug = true;
 
-  Siviglia.config = {
-    baseUrl: 'http://reflection.adtopy.com/',
-    // staticsUrl: 'http://statics.adtopy.com/',
-    staticsUrl: '../../../../',
-    metadataUrl: 'http://metadata.adtopy.com/',
-  }
+      Siviglia.config = {
+        baseUrl: "http://reflection.adtopy.com/",
+        // staticsUrl: 'http://statics.adtopy.com/',
+        staticsUrl: "../../../../",
+        metadataUrl: "http://metadata.adtopy.com/",
+      };
 
-  const basePath = 'index.html'
+      const basePath = "index.html";
 
-  function openTestSet(setID) {
-    window.open(`${basePath}?path=${setID}`)
-  }
-
-  function removeIframeFromDOM() {
-    const currentIframe = document.getElementById('test-iframe')
-    if (currentIframe) {
-      currentIframe.remove()
-    }
-  }
-
-  function createIframeInDOM(event) {
-    removeIframeFromDOM()
-    const iframeElement = document.createElement('iframe')
-    iframeElement.id = 'test-iframe'
-    iframeElement.title = "Inline Frame Example"
-    iframeElement.width = "100%"
-    iframeElement.height = "600"
-    iframeElement.src = `${basePath}?path=` + event.currentTarget.id
-    document.getElementById('test-container').appendChild(iframeElement)
-  }
-
-  function createTestButtonInDOM(innerText, containerID, path) {
-    const buttonElement = document.createElement('button')
-    buttonElement.className = 'btn btn-success'
-    buttonElement.textContent = innerText
-    buttonElement.id = path
-    buttonElement.onclick = createIframeInDOM
-    document.getElementById(containerID).appendChild(buttonElement)
-  }
-
-  Siviglia.require(['dependencies/js/testsList.js']).then(function () {
-    $(document).ready(function () {
-      for (const test of testsList) {
-        const groupName = test.path.split('/')[0]
-        createTestButtonInDOM(test.name, groupName+'-container', test.path)
+      function openTestSet(setID) {
+        window.open(`${basePath}?path=${setID}`);
       }
-      var parser = new Siviglia.UI.HTMLParser();
-      parser.parse($(document.body));
-    })
-  })
 
+      function removeIframeFromDOM() {
+        const currentIframe = document.getElementById("test-iframe");
+        if (currentIframe) {
+          currentIframe.remove();
+        }
+      }
 
-</script>
+      function createIframeInDOM(event) {
+        removeIframeFromDOM();
+        const iframeElement = document.createElement("iframe");
+        iframeElement.id = "test-iframe";
+        iframeElement.title = "Inline Frame Example";
+        iframeElement.width = "100%";
+        iframeElement.height = "600";
+        iframeElement.src = `${basePath}?path=` + event.currentTarget.id;
+        document.getElementById("test-container").appendChild(iframeElement);
+      }
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-</body>
+      function createTestButtonInDOM(innerText, containerID, path) {
+        const buttonElement = document.createElement("button");
+        buttonElement.className = "btn btn-success";
+        buttonElement.textContent = innerText;
+        buttonElement.id = path;
+        buttonElement.onclick = createIframeInDOM;
+        document.getElementById(containerID).appendChild(buttonElement);
+      }
 
+      Siviglia.require(["dependencies/js/testsList.js"]).then(function () {
+        $(document).ready(function () {
+          for (const test of testsList) {
+            const groupName = test.path.split("/")[0];
+            createTestButtonInDOM(
+              test.name,
+              groupName + "-container",
+              test.path,
+            );
+          }
+          var parser = new Siviglia.UI.HTMLParser();
+          parser.parse($(document.body));
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
