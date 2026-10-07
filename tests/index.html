@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Siviglia · Catálogo de tests</title>
+    <link rel="stylesheet" href="tests/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Siviglia · Catálogo de tests</h1>
+      <p>
+        Pruebas y ejemplos de referencia para desarrollo: interfaz, núcleo y
+        sistema de tipos.
+      </p>
+    </header>
+    <main>
+      <nav id="section-links" aria-label="Secciones del catálogo"></nav>
+      <div class="filters" role="search" aria-label="Filtrar tests">
+        <div class="search-field">
+          <label for="search">Buscar tests</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="Título, descripción, ruta o categoría…"
+            aria-controls="catalog"
+          />
+        </div>
+        <div>
+          <label for="section-filter">Sección</label>
+          <select id="section-filter" aria-controls="catalog">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <button id="clear-filters" type="button">Limpiar filtros</button>
+      </div>
+      <p id="result-count" role="status" aria-live="polite"></p>
+      <p class="help muted">
+        «Abrir test» utiliza el ejecutor existente. «Archivo» enlaza al fichero
+        del ejemplo; los fragmentos HTML y JavaScript necesitan su contexto de
+        ejecución.
+      </p>
+      <noscript
+        ><p>
+          Activa JavaScript para consultar y filtrar el catálogo de tests.
+        </p></noscript
+      >
+      <div id="catalog"></div>
+      <p id="empty-state" hidden>No hay tests que coincidan con los filtros.</p>
+      <footer class="muted">
+        Catálogo declarado en la variable <code>tests</code> de
+        <code>index.js</code>. Añade una entrada a esa variable para incorporar
+        un nuevo test.
+      </footer>
+    </main>
+    <script src="tests/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1516 @@
+[
+    {
+        "ruta": "ui/tests/expando/sivValue.definitionTest.html",
+        "titulo": "sivValue: definición",
+        "descripcion": "Asigna contenido HTML y parejas atributo-valor al nodo mediante sivValue.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivValue.psValueTest.html",
+        "titulo": "sivValue: cadenas parametrizables",
+        "descripcion": "Combina variables, texto y expresiones en el valor de sivValue.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivLoop.definitionTest.html",
+        "titulo": "sivLoop: definición",
+        "descripcion": "Genera una plantilla por elemento y expone su valor y clave en el contexto.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivLoop.nestedLoopsTest.html",
+        "titulo": "sivLoop: bucles anidados",
+        "descripcion": "Itera sobre colecciones anidadas utilizando el elemento del bucle padre.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivLoop.refreshTest.html",
+        "titulo": "sivLoop: refresco",
+        "descripcion": "Actualiza la plantilla al añadir, eliminar o modificar elementos de la colección.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivCall.definitionTest.html",
+        "titulo": "sivCall: definición",
+        "descripcion": "Invoca métodos con el nodo HTML y parámetros declarados mediante sivParams.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivEvent.definitionTest.html",
+        "titulo": "sivEvent: definición",
+        "descripcion": "Asocia eventos del nodo con callbacks y parámetros del widget.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivIf.definitionTest.html",
+        "titulo": "sivIf: definición",
+        "descripcion": "Alterna el contenido visible al cambiar el resultado de una expresión condicional.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivIf.refreshTest.html",
+        "titulo": "sivIf: refresco",
+        "descripcion": "Comprueba la regeneración del contenido y de los sivId al cambiar la condición.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivView.definitionTest.html",
+        "titulo": "sivView: definición",
+        "descripcion": "Instancia vistas hijas y mantiene vinculados los parámetros recibidos del padre.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivId-ByCode.definitionTest.html",
+        "titulo": "sivId e instanciación por código",
+        "descripcion": "Mapea nodos a variables y construye y destruye widgets desde JavaScript.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivLayout.definitionTest.html",
+        "titulo": "sivLayout: definición",
+        "descripcion": "Reutiliza una clase de widget con varias plantillas de presentación.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivViewName.definitionTest.html",
+        "titulo": "sivViewName: definición",
+        "descripcion": "Asigna nombres a las vistas hijas para acceder a ellas desde el widget padre.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/sivPromise.definitionTest.html",
+        "titulo": "sivPromise: definición",
+        "descripcion": "Procesa el contenido del expando cuando se resuelve una promesa.",
+        "seccion": "UI",
+        "categoria": "Expando",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/expando/expandoTest.html",
+        "titulo": "Ejemplo de expandos",
+        "descripcion": "Ejemplo adicional de uso de expandos en una plantilla de widget.",
+        "seccion": "UI",
+        "categoria": "Expando"
+    },
+    {
+        "ruta": "ui/tests/input/definitionTest.html",
+        "titulo": "Input: definición",
+        "descripcion": "Vincula un StdInputContainer a un campo del formulario mediante su clave.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/basicFieldsTest.html",
+        "titulo": "Campos básicos",
+        "descripcion": "Muestra los controles de entrada asociados a los tipos de campo básicos.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/containerFieldTest.html",
+        "titulo": "Campo Container",
+        "descripcion": "Agrupa y representa los campos internos de un Container.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/stateTest.html",
+        "titulo": "Estados de campos",
+        "descripcion": "Define estados en los campos de un Container mediante el tipo State.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/defaultValuesTest.html",
+        "titulo": "Valores por defecto",
+        "descripcion": "Comprueba cuándo se aplican los valores DEFAULT de los campos del Container.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/inputParamsTest.html",
+        "titulo": "Parámetros de inputs",
+        "descripcion": "Personaliza los widgets de los campos mediante INPUTPARAMS y sus paths.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/arrayFieldTest.html",
+        "titulo": "Campo Array",
+        "descripcion": "Representa un array como una lista ordenada de valores editables.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/dictionaryFieldTest.html",
+        "titulo": "Campo Dictionary",
+        "descripcion": "Muestra las entradas de un diccionario y los valores de cada una.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/typeSwitcherFieldTest.html",
+        "titulo": "Campo TypeSwitcher",
+        "descripcion": "Selecciona el tipo de un campo mediante TYPE_FIELD y accede a CONTENT_FIELD.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/complexContainerTest.html",
+        "titulo": "Container con campos complejos",
+        "descripcion": "Agrupa controles para campos complejos dentro de un Container.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/complexArrayTest.html",
+        "titulo": "Array con campos complejos",
+        "descripcion": "Selecciona elementos por índice y muestra su contenido en un área de edición.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/complexDictionaryTest.html",
+        "titulo": "Dictionary con campos complejos",
+        "descripcion": "Edita entradas complejas de diccionario partiendo de campos sin valor inicial.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/complexTypeSwitcherTest.html",
+        "titulo": "TypeSwitcher con campos complejos",
+        "descripcion": "Cambia entre tipos complejos y edita sus valores desde el formulario.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/fieldValidationTest.html",
+        "titulo": "Validación de campos",
+        "descripcion": "Comprueba que el input muestre el error al asignarle un valor inválido.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/pathOnFieldTest.html",
+        "titulo": "Mostrar campos mediante paths",
+        "descripcion": "Utiliza showPath para renderizar y mostrar un campo indicado por su ruta.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/comboboxTest.html",
+        "titulo": "ComboBox: fuente Array",
+        "descripcion": "Construye las opciones del selector a partir de valores y etiquetas de un array.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/dependentComboboxTest.html",
+        "titulo": "ComboBox dependientes",
+        "descripcion": "Selecciona las opciones disponibles en función de otro campo con su propia fuente.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/remoteSourceComboboxTest.html",
+        "titulo": "ComboBox: fuente remota",
+        "descripcion": "Utiliza un modelo remoto como fuente de opciones del selector.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/dependentRemoteSourceComboboxTest.html",
+        "titulo": "ComboBox remotos dependientes",
+        "descripcion": "Relaciona fuentes remotas mediante parámetros de los DataSource dependientes.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/remoteFieldDefinitionTest.html",
+        "titulo": "Definición remota de campo",
+        "descripcion": "Obtiene la definición del tipo de un campo desde una ruta remota.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/remoteFormDefinitionTest.html",
+        "titulo": "Definición remota de formulario",
+        "descripcion": "Carga un formulario por modelo y nombre, con claves opcionales para editar valores.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/remoteWidgetDefinitionTest.html",
+        "titulo": "Definición remota de widget",
+        "descripcion": "Genera el formulario a partir del nombre de una vista definida en el servidor.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/exclusiveSourceTest.html",
+        "titulo": "Fuente exclusiva",
+        "descripcion": "Comprueba que los elementos de una fuente no se repitan en el valor asociado.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/dataSourceRecursiveListTest.html",
+        "titulo": "Lista recursiva de DataSource",
+        "descripcion": "Compone listas anidadas usando modelos, claves y parámetros de DataSource.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/jqxTreeTest.html",
+        "titulo": "Input jqxTree",
+        "descripcion": "Ejemplo de representación de información en un control de árbol jqxTree.",
+        "seccion": "UI",
+        "categoria": "Input",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/input/comboBox.html",
+        "titulo": "ComboBox: ejemplo adicional",
+        "descripcion": "Ejemplo de creación de varias vistas ComboBox desde un widget.",
+        "seccion": "UI",
+        "categoria": "Input"
+    },
+    {
+        "ruta": "ui/tests/input/comboBox2.html",
+        "titulo": "ComboBox: segundo ejemplo",
+        "descripcion": "Variante adicional del ejemplo de input ComboBox.",
+        "seccion": "UI",
+        "categoria": "Input"
+    },
+    {
+        "ruta": "ui/tests/input/dateTimeRangeTest.html",
+        "titulo": "Intervalos de fecha y hora",
+        "descripcion": "Configura inicio, fin y tamaño de intervalo para generar rangos temporales.",
+        "seccion": "UI",
+        "categoria": "Input"
+    },
+    {
+        "ruta": "ui/tests/input/relativeDateTimeRangeTest.html",
+        "titulo": "Intervalos de fecha relativos",
+        "descripcion": "Calcula una fecha a partir de una fecha base, un período y un signo.",
+        "seccion": "UI",
+        "categoria": "Input"
+    },
+    {
+        "ruta": "ui/tests/input/deleteElementOnArray.html",
+        "titulo": "Eliminar elementos de un array",
+        "descripcion": "Ejemplo de eliminación de elementos desde un control de tipo Array.",
+        "seccion": "UI",
+        "categoria": "Input"
+    },
+    {
+        "ruta": "ui/tests/widget/definitionTest.html",
+        "titulo": "Widget: definición",
+        "descripcion": "Relaciona plantilla, clase y vista mediante sivWidget, widgetCode y sivView.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/classVarTest.html",
+        "titulo": "Variables de clase",
+        "descripcion": "Declara variables en preInitialize y las consulta desde el contexto del widget.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/lifeCycleTest.html",
+        "titulo": "Ciclo de vida",
+        "descripcion": "Muestra las fases preInitialize, renderizado e initialize y el refresco posterior.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/keyPathTest.html",
+        "titulo": "Acceso por paths",
+        "descripcion": "Navega por las claves de objetos almacenados en variables del widget.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/dependentPathTest.html",
+        "titulo": "Paths dependientes",
+        "descripcion": "Construye rutas que dependen de otras rutas o del valor de variables.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/psDefinitionTest.html",
+        "titulo": "ParametrizableString",
+        "descripcion": "Demuestra sustituciones, anidamiento, verificaciones y transformaciones en cadenas.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/nodeTransparencyTest.html",
+        "titulo": "Transparencia de nodos",
+        "descripcion": "Comprueba que los nodos SivWidget, SivView y SivLoop no aparezcan en el DOM final.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/rootNodeDefinitionTest.html",
+        "titulo": "RootNode",
+        "descripcion": "Accede a los nodos de un widget después de renderizarse mediante rootNode.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/preinitializePromiseTest.html",
+        "titulo": "Promesas en preInitialize",
+        "descripcion": "Retrasa la construcción del widget hasta resolver una promesa de inicialización.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/btoTest.html",
+        "titulo": "BaseTypedObject y widgets",
+        "descripcion": "Combina objetos tipados con vistas y coordina su actualización y destrucción.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/remoteBTOTest.html",
+        "titulo": "BaseTypedObject remoto",
+        "descripcion": "Espera la carga de un DataSource remoto antes de construir la vista.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/dataSourceTest.html",
+        "titulo": "DataSource",
+        "descripcion": "Obtiene y representa información de un BaseTypedObject mediante un DataSource.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/widgetFactoryTest.html",
+        "titulo": "Factoría de widgets",
+        "descripcion": "Instancia widgets según el tipo de cada campo y gestiona su destrucción.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/waitCompleteTest.html",
+        "titulo": "Esperar a las subvistas",
+        "descripcion": "Espera a que todas las vistas dependientes estén listas antes de continuar.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/widget/widgetCommunicationTest.html",
+        "titulo": "Comunicación entre widgets",
+        "descripcion": "Comunica dos widgets hijos mediante eventos gestionados por su padre.",
+        "seccion": "UI",
+        "categoria": "Widget",
+        "ejecutor": true
+    },
+    {
+        "ruta": "ui/tests/compositions/actionGeneratorTest.html",
+        "titulo": "Generador de acciones",
+        "descripcion": "Formulario para generar las acciones por defecto de un modelo.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/aliasesEditionTest.html",
+        "titulo": "Edición de alias",
+        "descripcion": "Ejemplo del formulario de edición de alias.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/baseAppTest.html",
+        "titulo": "Aplicación base",
+        "descripcion": "Ejemplo de composición de una aplicación con vistas y datos.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/cursorGraphTest.html",
+        "titulo": "Gráfico de cursores",
+        "descripcion": "Ejemplo de visualización de cursores mediante un gráfico.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/cursorGridTest.html",
+        "titulo": "Grid de cursores",
+        "descripcion": "Representa cursores en una tabla con campos para sus parámetros.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/definitionEditorTest.html",
+        "titulo": "Editor de definiciones",
+        "descripcion": "Formulario de edición de definiciones.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/definitionEditor0Test.html",
+        "titulo": "Editor de definiciones: variante 0",
+        "descripcion": "Ejemplo alternativo de construcción del editor de definiciones.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/definitionEditor2Test.html",
+        "titulo": "Editor de definiciones: variante 2",
+        "descripcion": "Segunda variante adicional del editor de definiciones.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/definitionEditor3Test.html",
+        "titulo": "Editor de definiciones: variante 3",
+        "descripcion": "Tercera variante adicional del formulario de edición de definiciones.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/demoTest.html",
+        "titulo": "Demo de edición",
+        "descripcion": "Ejemplo de selección de configuración y edición de definiciones.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/editFormTest.html",
+        "titulo": "Formulario de edición",
+        "descripcion": "Ejemplo de composición de un formulario para editar datos.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/esDatasourceTest.html",
+        "titulo": "DataSource ES",
+        "descripcion": "Ejemplo de DataSource integrado con vistas y un grid.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/formGeneratorTest.html",
+        "titulo": "Generador de formularios",
+        "descripcion": "Ejemplo del formulario de generación asociado a acciones.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/jqxDatasourceTest.html",
+        "titulo": "DataSource y jqxGrid",
+        "descripcion": "Integra un DataSource con la representación de datos de jqxGrid.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/modelFormTest.html",
+        "titulo": "Formulario de modelo",
+        "descripcion": "Vincula una instancia de modelo a un formulario de edición.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/modelFormParametrizedTest.html",
+        "titulo": "Formulario de modelo parametrizado",
+        "descripcion": "Ejemplo de personalización de un formulario de modelo mediante parámetros.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/modelGeneratorTest.html",
+        "titulo": "Generador de modelos",
+        "descripcion": "Formulario para crear modelos.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/modelManagerTest.html",
+        "titulo": "Gestor de modelos",
+        "descripcion": "Interfaz de gestión y creación de modelos con navegación lateral.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/compositions/userLogin.html",
+        "titulo": "Usuarios y acceso",
+        "descripcion": "Página de prueba de operaciones de usuario y acceso.",
+        "seccion": "UI",
+        "categoria": "Compositions"
+    },
+    {
+        "ruta": "ui/tests/list/listTest.html",
+        "titulo": "List: tabla y filtros",
+        "descripcion": "Combina una tabla de resultados con un formulario de filtrado.",
+        "seccion": "UI",
+        "categoria": "List"
+    },
+    {
+        "ruta": "ui/tests/list/jQWidget/treeTest.html",
+        "titulo": "Árbol jQWidget",
+        "descripcion": "Ejemplo de lista jerárquica representada como árbol.",
+        "seccion": "UI",
+        "categoria": "List / jQWidget"
+    },
+    {
+        "ruta": "ui/tests/dockingTest.html",
+        "titulo": "Docking de ventanas",
+        "descripcion": "Organiza widgets como ventanas mediante el docking de jqxWidgets.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/hiddenErrorsTest.html",
+        "titulo": "Errores en campos ocultos",
+        "descripcion": "Ejemplo de errores en campos de un tipo que no se están mostrando.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/modelTest.html",
+        "titulo": "Modelos",
+        "descripcion": "Carga una instancia de modelo y muestra sus campos en una vista.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/programmaticTest.html",
+        "titulo": "Creación programática",
+        "descripcion": "Construye un widget desde código y añade sus nodos a la vista padre.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/smartConfigTest.html",
+        "titulo": "SmartConfig",
+        "descripcion": "Combina un selector de configuración con su editor.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/smartConfig2Test.html",
+        "titulo": "SmartConfig: variante 2",
+        "descripcion": "Variante de selección y edición de configuración mediante identificadores.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/verySimpleTest.html",
+        "titulo": "Ejemplo mínimo",
+        "descripcion": "Ejemplo básico de construcción de una vista de widget.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/indexTypes.html",
+        "titulo": "Tipos y vistas",
+        "descripcion": "Página de ejemplos de tipos y expresiones en plantillas.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/WTest.php",
+        "titulo": "WTest",
+        "descripcion": "Página PHP de pruebas de widgets.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "ui/tests/testViewLoad.php",
+        "titulo": "Carga de vistas",
+        "descripcion": "Página PHP de prueba de carga de vistas.",
+        "seccion": "UI",
+        "categoria": "General"
+    },
+    {
+        "ruta": "tests/src/require/chainTest.js",
+        "titulo": "Dependencias encadenadas",
+        "descripcion": "Carga una cadena de dependencias y llama a la función de la última dependencia.",
+        "seccion": "Core",
+        "categoria": "Require"
+    },
+    {
+        "ruta": "tests/src/require/chainedMultipleTest.js",
+        "titulo": "Múltiples dependencias encadenadas",
+        "descripcion": "Carga simultáneamente varios niveles de una cadena de dependencias.",
+        "seccion": "Core",
+        "categoria": "Require"
+    },
+    {
+        "ruta": "tests/src/require/multipleTest.js",
+        "titulo": "Múltiples dependencias",
+        "descripcion": "Ejemplo de carga de varios recursos mediante Siviglia.require.",
+        "seccion": "Core",
+        "categoria": "Require"
+    },
+    {
+        "ruta": "tests/src/require/mutualRequirementTest.js",
+        "titulo": "Dependencias mutuas",
+        "descripcion": "Prueba la carga de recursos que se requieren mutuamente.",
+        "seccion": "Core",
+        "categoria": "Require"
+    },
+    {
+        "ruta": "tests/src/require/require-widgetLoadTest.php",
+        "titulo": "Carga de widgets",
+        "descripcion": "Página PHP de prueba de carga de widgets mediante require.",
+        "seccion": "Core",
+        "categoria": "Require"
+    },
+    {
+        "ruta": "tests/src/require/require-remoteWidgetLoadTest.php",
+        "titulo": "Carga de widgets remotos",
+        "descripcion": "Página PHP de prueba de carga de widgets remotos.",
+        "seccion": "Core",
+        "categoria": "Require"
+    },
+    {
+        "ruta": "tests/types/array/arrayConCamposContainer.js",
+        "titulo": "Array de Container",
+        "descripcion": "Comprueba un array cuyos elementos son campos de tipo Container.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/arraySerialization.js",
+        "titulo": "Serialización de arrays",
+        "descripcion": "Serializa a valores planos combinando Dictionary, Container y Array.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(1).js",
+        "titulo": "Array: comprobaciones básicas",
+        "descripcion": "Comprueba eventos, errores y operaciones básicas de arrays.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(2).js",
+        "titulo": "Array: métodos",
+        "descripcion": "Verifica el funcionamiento de los métodos de Array.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(3).js",
+        "titulo": "Array: elementos complejos y paths",
+        "descripcion": "Comprueba métodos y rutas con elementos complejos de tipo Container.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(4).js",
+        "titulo": "Array: referencias y eventos",
+        "descripcion": "Verifica que una referencia previa no reciba eventos del nuevo valor asignado.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(5).js",
+        "titulo": "Array: BLANK_IS_NULL",
+        "descripcion": "Comprueba la conversión de valores vacíos a null.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(6).js",
+        "titulo": "Array: borrado de elementos",
+        "descripcion": "Elimina elementos de arrays que contienen TypeSwitcher y Container.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(7).js",
+        "titulo": "Array: proxies y arrays JavaScript",
+        "descripcion": "Comprueba la vinculación de arrays JavaScript con los proxies de los tipos.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/array/comprobacionesDeArray(8).js",
+        "titulo": "Array: copia entre campos",
+        "descripcion": "Verifica que asignar un array tipado a otro campo genere una copia.",
+        "seccion": "Types",
+        "categoria": "Array",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionDeNulos(1).js",
+        "titulo": "Valores nulos: caso 1",
+        "descripcion": "Comprueba que un valor no asignado se devuelva como null.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionDeNulos(2).js",
+        "titulo": "Valores nulos: caso 2",
+        "descripcion": "Segundo caso de comprobación de valores no asignados.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionDeNulos(3).js",
+        "titulo": "Valores nulos: caso 3",
+        "descripcion": "Tercer caso de comprobación de valores no asignados.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionSave()EnBaseTypedObject.js",
+        "titulo": "Validación al guardar",
+        "descripcion": "Comprueba los campos requeridos al llamar a save y completa el objeto para validarlo.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionDeGetPathEnBaseTypedObjectYTypeSwitcher.js",
+        "titulo": "Paths con TypeSwitcher",
+        "descripcion": "Comprueba getFullPath y la transparencia del TypeSwitcher en las rutas.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionDeKEEP_ON_EMPTYEnBaseTypedObject.js",
+        "titulo": "KEEP_ON_EMPTY",
+        "descripcion": "Comprueba la conservación de campos sin valor como null.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/comprobacionDeDEFAULTEnBaseTypedObject.js",
+        "titulo": "Valor DEFAULT",
+        "descripcion": "Asigna un valor por defecto a un BaseTypedObject completo.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObject/revocacionDeProxy.js",
+        "titulo": "Revocación de proxies",
+        "descripcion": "Verifica la invalidación de referencias al borrar un valor y el uso de getPlainValue.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObject",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionSimpleDeCampoSucio.js",
+        "titulo": "Contabilización de campos sucios",
+        "descripcion": "Comprueba el seguimiento de los campos modificados.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionSimpleDeCampoConError.js",
+        "titulo": "Errores de campo",
+        "descripcion": "Asigna un valor inválido, comprueba el error y lo limpia al corregir el valor.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDeErroresGeneradosPorCambiosDeEstado.js",
+        "titulo": "Errores por cambios de estado",
+        "descripcion": "Asocia los errores de transición a los campos que los generan.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDeErroresGeneradosPorCambiosDeEstado(2).js",
+        "titulo": "Errores por cambios de estado: identidad",
+        "descripcion": "Comprueba que la excepción lanzada y la almacenada sean el mismo objeto.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDeCambioDeEstadoOk.js",
+        "titulo": "Cambio de estado válido",
+        "descripcion": "Realiza una transición cuando los campos requeridos están presentes.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/otraComprobacionDeCambioDeEstadoIncorrecto.js",
+        "titulo": "Cambio de estado incorrecto",
+        "descripcion": "Intenta una transición desde un estado de origen no permitido.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/errorAlIntentarUnaTransicionDeEstadoNoPermitida.js",
+        "titulo": "Transición no permitida",
+        "descripcion": "Comprueba el error al intentar una transición prohibida.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/errorAlCambiarAEstadoNoDefinido.js",
+        "titulo": "Estado desconocido",
+        "descripcion": "Comprueba UNKNOWN_STATE al intentar usar un estado no definido.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/testsDeLlamadaDeCallbacks.js",
+        "titulo": "Callbacks de transición",
+        "descripcion": "Ejecuta ON_ENTER, ON_LEAVE y TESTS y rechaza el cambio si un test devuelve false.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/segundoTestDeCallbacksDeEstado.js",
+        "titulo": "Callbacks de estado: aceptación",
+        "descripcion": "Acepta el cambio mediante un callback TEST y comprueba sus efectos.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/tercerTestDeCallbacksDeEstado.js",
+        "titulo": "Callbacks de estado: METHOD y PROCESS",
+        "descripcion": "Ejecuta ambos tipos de callback al entrar en un estado.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDeQueNoEsPosibleSalirDeUnEstadoFinal.js",
+        "titulo": "Estado final",
+        "descripcion": "Comprueba que no sea posible salir de un estado final.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDeCallbacksEspecificadosCon-star-.js",
+        "titulo": "Callbacks con comodín",
+        "descripcion": "Selecciona callbacks por estado de origen o destino utilizando el comodín *.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDeCallbacksIndependientes.js",
+        "titulo": "Callbacks independientes",
+        "descripcion": "Define callbacks independientes del estado de origen o destino.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDePathSimple.js",
+        "titulo": "Path simple",
+        "descripcion": "Obtiene el valor de un campo a través de su ruta.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDePathsComplejos.js",
+        "titulo": "Paths complejos",
+        "descripcion": "Obtiene valores atravesando arrays y diccionarios.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDePathsComplejos2.js",
+        "titulo": "Paths complejos: referencias",
+        "descripcion": "Resuelve una ruta que contiene una referencia a otro campo.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/baseTypedObjectModel/comprobacionDePathsComplejos3.js",
+        "titulo": "Paths complejos: variante 3",
+        "descripcion": "Comprueba otro caso de rutas con referencias a campos.",
+        "seccion": "Types",
+        "categoria": "BaseTypedObjectModel",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/simpleContainer.js",
+        "titulo": "Container simple",
+        "descripcion": "Comprueba la inicialización de las librerías y de un Container básico.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/pruebaDeCampoRequerido.js",
+        "titulo": "Campo requerido",
+        "descripcion": "Comprueba que save detecte la ausencia de un campo requerido.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/pruebaDeCampoErroneo.js",
+        "titulo": "Campo erróneo",
+        "descripcion": "Asigna una cadena demasiado corta y comprueba la validación.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/pruebaDeCampoVacio.js",
+        "titulo": "Campo vacío",
+        "descripcion": "Asigna null y comprueba HasOwnValue.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/valorInicialNulo.js",
+        "titulo": "Valor inicial nulo",
+        "descripcion": "Comprueba que un Container sin valor asignado sea null.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/valorNuloDeCampos.js",
+        "titulo": "Campos sin valor",
+        "descripcion": "Comprueba que los campos no asignados tengan valor null.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/valorPorDefectoDeCampos.js",
+        "titulo": "Valores por defecto",
+        "descripcion": "Comprueba la aplicación del valor por defecto al asignar null.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/valorNuloCuandoTodosLosCamposSonNulos.js",
+        "titulo": "Todos los campos nulos",
+        "descripcion": "Comprueba la conversión a null cuando todos los campos están vacíos.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/valorNoNuloCuandoTodosLosCamposSonNulos,PreservandoKeys.js",
+        "titulo": "Conservación de claves nulas",
+        "descripcion": "Conserva el objeto al serializar campos nulos con PRESERVE_KEYS_ON_NULL.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/containerUsandoBLANK_IS_NULL.js",
+        "titulo": "BLANK_IS_NULL",
+        "descripcion": "Comprueba el valor del Container cuando no hay campos o todos están en blanco.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/obtencionDePath.js",
+        "titulo": "Obtención de paths",
+        "descripcion": "Obtiene un campo a través de su ruta.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/obtencionDePath2.js",
+        "titulo": "Paths profundos",
+        "descripcion": "Comprueba claves de un Container anidado dentro de varios campos.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/obtencionDePath3.js",
+        "titulo": "Paths relativos",
+        "descripcion": "Navega hasta un elemento y resuelve una ruta relativa desde él.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/chequeoDeFuente.js",
+        "titulo": "Validación de fuente",
+        "descripcion": "Prueba valores válidos e inválidos con una fuente dependiente de otro campo.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionDeSaveEnContainer.js",
+        "titulo": "Validación al guardar",
+        "descripcion": "Completa un campo requerido y comprueba que save deje de lanzar una excepción.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionDeGetPathEnContainer.js",
+        "titulo": "Cálculo de getPath",
+        "descripcion": "Verifica las rutas calculadas para los campos del Container.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionDeSET_ON_EMPTYYKEEP_ON_EMPTYEnContainer.js",
+        "titulo": "SET_ON_EMPTY y KEEP_ON_EMPTY",
+        "descripcion": "Comprueba los indicadores de conservación y asignación de valores vacíos.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/containerInicializadoAPartirDeObjetoPlanoJavascript.js",
+        "titulo": "Inicialización desde un objeto plano",
+        "descripcion": "Construye un Container a partir de un objeto JavaScript.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/accesosATravesDePaths.js",
+        "titulo": "Acceso a campos por paths",
+        "descripcion": "Comprueba el acceso a rutas después de inicializar el Container padre.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionesDeCamposDirty.js",
+        "titulo": "Campos dirty",
+        "descripcion": "Comprueba que los campos modificados se marquen correctamente.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionesDeCamposDirtyAnidados.js",
+        "titulo": "Campos dirty anidados",
+        "descripcion": "Asocia cada campo modificado con su controlador y su ruta.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionesBasicasDeEstado.js",
+        "titulo": "API básica de estados",
+        "descripcion": "Comprueba la API de estados de un Container inicializado.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionesFuncionalesDeEstado.js",
+        "titulo": "Operaciones según el estado",
+        "descripcion": "Verifica campos requeridos y transiciones durante operaciones dependientes del estado.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionesFuncionalesDeEstado(2).js",
+        "titulo": "Estados con asignaciones completas",
+        "descripcion": "Provoca cambios de estado asignando valores completos al Container.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/valorVacioEnValorPorDefecto..js",
+        "titulo": "Vacío con valores por defecto",
+        "descripcion": "Comprueba que el Container sea null si todos sus valores son los predeterminados.",
+        "seccion": "Types",
+        "categoria": "Container",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/container/comprobacionDeCallbacksEspecificadosCon .js",
+        "titulo": "Callbacks de Container",
+        "descripcion": "Ejemplo adicional de especificación de callbacks de estado.",
+        "seccion": "Types",
+        "categoria": "Container"
+    },
+    {
+        "ruta": "tests/types/dictionary/comprobacionDeGetPathYDEFAULTEnDictionary.js",
+        "titulo": "getPath y DEFAULT",
+        "descripcion": "Comprueba las rutas y los valores por defecto del Dictionary.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dictionary/comprobacionDeSET_ON_EMPTYEnDictionary.js",
+        "titulo": "SET_ON_EMPTY",
+        "descripcion": "Comprueba el indicador SET_ON_EMPTY en diccionarios.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dictionary/comprobacionDeALLOW_NULL_VALUESEnDictionary.js",
+        "titulo": "ALLOW_NULL_VALUES",
+        "descripcion": "Comprueba el tratamiento de valores nulos en las entradas del diccionario.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dictionary/testSimpleDeDictionary(1).js",
+        "titulo": "Dictionary: funcionamiento básico",
+        "descripcion": "Prueba operaciones básicas y listeners sobre un diccionario.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dictionary/testSimpleDeDictionary(2).js",
+        "titulo": "Dictionary: copias y listeners",
+        "descripcion": "Comprueba que no se disparen listeners en objetos que mantienen copias.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dictionary/comprobacionDeBLANK_IS_NULLEnDictionary.js",
+        "titulo": "BLANK_IS_NULL",
+        "descripcion": "Comprueba la conversión de diccionarios vacíos a null.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dictionary/comprobacionesDeReferenciasADictionary.js",
+        "titulo": "Referencias a Dictionary",
+        "descripcion": "Comprueba el comportamiento de las referencias y las copias entre diccionarios.",
+        "seccion": "Types",
+        "categoria": "Dictionary",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/enum/comprobacionesDeEnum(1).js",
+        "titulo": "Comprobaciones de Enum",
+        "descripcion": "Prueba el funcionamiento básico del tipo Enum.",
+        "seccion": "Types",
+        "categoria": "Enum",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/integer/comprobacionesDeInteger.js",
+        "titulo": "Comprobaciones de Integer",
+        "descripcion": "Prueba el funcionamiento básico del tipo Integer.",
+        "seccion": "Types",
+        "categoria": "Integer",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/string/variosTestDeString.js",
+        "titulo": "Validación y eventos de String",
+        "descripcion": "Valida cadenas y cuenta eventos CHANGE tanto con valores válidos como con errores.",
+        "seccion": "Types",
+        "categoria": "String",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/string/comprobacionDeBLANK_IS_NULLEnString.js",
+        "titulo": "String: BLANK_IS_NULL",
+        "descripcion": "Comprueba la conversión de cadenas en blanco a null.",
+        "seccion": "Types",
+        "categoria": "String",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/string/comprobacionesDeString.js",
+        "titulo": "String y expresiones regulares",
+        "descripcion": "Comprueba el tipo String y su validación mediante expresiones regulares.",
+        "seccion": "Types",
+        "categoria": "String",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/dateTime/comprobacionesDeDateTime.js",
+        "titulo": "Comprobaciones de DateTime",
+        "descripcion": "Comprueba límites temporales, fechas pasadas y fechas futuras.",
+        "seccion": "Types",
+        "categoria": "DateTime",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/source/sourceDeEnum(1).js",
+        "titulo": "Fuente de Enum",
+        "descripcion": "Comprueba las fuentes de Enum basadas en arrays.",
+        "seccion": "Types",
+        "categoria": "Source",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/source/sourcesDeString(Array).js",
+        "titulo": "Fuente Array para String",
+        "descripcion": "Restringe el valor de un String a los elementos disponibles en una fuente.",
+        "seccion": "Types",
+        "categoria": "Source",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/source/sourcesDeString(ArrayPath).js",
+        "titulo": "Fuente ArrayPath para String",
+        "descripcion": "Construye fuentes mediante rutas dependientes de otros campos del objeto.",
+        "seccion": "Types",
+        "categoria": "Source",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/source/sourceTipoPATH.js",
+        "titulo": "Fuente PATH",
+        "descripcion": "Resuelve valores permitidos desde otro campo y escucha cambios en la fuente.",
+        "seccion": "Types",
+        "categoria": "Source",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/source/sourceTipoPATH,ConValoresUnicos.js",
+        "titulo": "Fuente PATH con valores únicos",
+        "descripcion": "Impide duplicados en un array cuya fuente son las claves de un diccionario.",
+        "seccion": "Types",
+        "categoria": "Source",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/source/sourceTipoRemoto.js",
+        "titulo": "Fuente remota",
+        "descripcion": "Valida una fuente remota con parámetros en la URL. No está activa en el ejecutor actual.",
+        "seccion": "Types",
+        "categoria": "Source"
+    },
+    {
+        "ruta": "tests/types/source/comprobacionDeSourceEnArrays,AlAsignarArraysCompletos.js",
+        "titulo": "Validación de arrays completos",
+        "descripcion": "Comprueba todos los elementos de la fuente al asignar un array completo.",
+        "seccion": "Types",
+        "categoria": "Source",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionTS1.js",
+        "titulo": "TypeSwitcher: inicialización",
+        "descripcion": "Comprueba la existencia de campos internos después de establecer el tipo y un valor.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionTS2.js",
+        "titulo": "TypeSwitcher: tipo implícito",
+        "descripcion": "Utiliza IMPLICIT_TYPE cuando el valor no contiene el campo discriminador.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionTS3.js",
+        "titulo": "TypeSwitcher: cambio de tipo",
+        "descripcion": "Comprueba que desaparezcan los campos del tipo anterior al cambiar de tipo.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionTS4.js",
+        "titulo": "TypeSwitcher: acceso a campos",
+        "descripcion": "Comprueba el acceso a los valores internos a través de campos.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionListenerTS1.js",
+        "titulo": "Listener de cambio de tipo",
+        "descripcion": "Escucha el evento producido al cambiar el tipo seleccionado.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionListenerTS2.js",
+        "titulo": "Listener al asignar null",
+        "descripcion": "Comprueba los listeners al establecer el valor del TypeSwitcher a null.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionListenerTS3.js",
+        "titulo": "Listeners de campos internos",
+        "descripcion": "Escucha campos internos y comprueba que no queden listeners pendientes.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionDeDEFAULTEnTypeSwitcher(1).js",
+        "titulo": "TypeSwitcher: DEFAULT",
+        "descripcion": "Comprueba la asignación del valor por defecto.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionesDeTypeSwitcher(1).js",
+        "titulo": "TypeSwitcher: operaciones básicas",
+        "descripcion": "Realiza varias comprobaciones del funcionamiento normal del tipo.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionesDeTypeSwitcher(2).js",
+        "titulo": "TypeSwitcher sin CONTENT_FIELD",
+        "descripcion": "Repite las operaciones básicas sin un campo separado para el contenido.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionesDeTypeSwitcher(3).js",
+        "titulo": "TypeSwitcher: ALLOWED_TYPES",
+        "descripcion": "Comprueba el comodín * en la lista de tipos permitidos.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/comprobacionDeBLANK_IS_NULLEnTypeSwitcher.js",
+        "titulo": "TypeSwitcher: BLANK_IS_NULL",
+        "descripcion": "Comprueba la conversión de valores vacíos a null.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/typeswitcherExtended1.js",
+        "titulo": "Selección por tipo de campo",
+        "descripcion": "Elige el tipo según el dato de un campo indicado en ON / FIELD.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/typeswitcherExtended2.js",
+        "titulo": "Selección por existencia de campo",
+        "descripcion": "Decide el tipo según el tipo de dato y la existencia de un campo.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/typeSwitcher/typeswitcherExtended3.js",
+        "titulo": "Selección por tipo del valor",
+        "descripcion": "Decide el tipo a partir del valor completo, sin utilizar ON / FIELD.",
+        "seccion": "Types",
+        "categoria": "TypeSwitcher",
+        "ejecutor": true
+    },
+    {
+        "ruta": "tests/types/VTest.html",
+        "titulo": "VTests: suite de tipos",
+        "descripcion": "Página independiente con una colección de pruebas del sistema de tipos.",
+        "seccion": "Types",
+        "categoria": "General"
+    }
+]
